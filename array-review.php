@@ -7,3 +7,13 @@
  */
 
 $animals = array("panda","alpaca","boa");
+
+function printAnimals($array){
+    sort($array);
+    foreach($array as $value){
+        echo($value . " ");
+    }
+    echo "<br>";
+}
+
+printAnimals($animals);
