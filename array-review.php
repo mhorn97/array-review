@@ -38,7 +38,7 @@ printAnimals($animals);
 
 echo "<h1>Part 2</h1>";
 
-$cupcakes = array(
+$flavors = array(
                 "grasshopper" => "The Grasshopper",
                 "maple" => "Whiskey Maple Bacon",
                 "carrot" => "Carrot Walnut",
@@ -47,3 +47,7 @@ $cupcakes = array(
                 "lemon" => "Lemon Drop",
                 "tiramisu" => "Tiramisu"
 );
+
+foreach ($flavors as $flavor => $flavor_name){
+    echo "<input type=\"checkbox\" name = \"flavors[]\" value = \"$flavor\">$flavor_name<br>";
+}
