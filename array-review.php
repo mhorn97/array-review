@@ -16,4 +16,22 @@ function printAnimals($array){
     echo "<br>";
 }
 
+function addAnimal($animal,$array){
+    $copyAnimal = strtolower($animal);
+    $copyArray = array_map('strtolower',$array);
+    echo "Adding $animal to array <br>";
+
+    if(!in_array($copyAnimal, $copyArray)){
+        array_push($array,$animal);
+
+    }
+    return $array;
+}
+
 printAnimals($animals);
+$animals = addAnimal("goat",$animals);
+printAnimals($animals);
+$animals = addAnimal("Boa",$animals);
+printAnimals($animals);
+
+
