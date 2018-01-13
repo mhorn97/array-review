@@ -6,6 +6,8 @@
  * Time: 7:53 PM
  */
 
+echo "<h1>Part 1</h1>";
+
 $animals = array("panda","alpaca","boa");
 
 function printAnimals($array){
@@ -34,4 +36,14 @@ printAnimals($animals);
 $animals = addAnimal("Boa",$animals);
 printAnimals($animals);
 
+echo "<h1>Part 2</h1>";
 
+$cupcakes = array(
+                "grasshopper" => "The Grasshopper",
+                "maple" => "Whiskey Maple Bacon",
+                "carrot" => "Carrot Walnut",
+                "caramel" => "Salted Caramel Cupcake",
+                "velvet" => "Red Velvet",
+                "lemon" => "Lemon Drop",
+                "tiramisu" => "Tiramisu"
+);
